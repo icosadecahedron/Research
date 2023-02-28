@@ -1,0 +1,8 @@
+gnuplot> set datafile separator '\t'
+gnuplot> set ylabel "Mutation Rates"
+gnuplot> set xlabel "Sliding Windows"
+gnuplot> set term png
+
+gnuplot> set output "mutationrate.png"
+gnuplot> plot "bin.41_SRR15275213.vcf.out" using 1:2 with lines
+gnuplot> exit
